@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Practicante Banco de Bogotá",
+    company: "Banco de Bogotá",
+    description:
+      "Durante mi práctica, desarrollé aplicaciones de gestión para mejorar la experiencia del cliente interno y el seguimiento de ventas. Apliqué conocimientos en programación (Python, Java, JavaScript, C#), desarrollo web (HTML, CSS, JavaScript, frameworks como React, Angular, Vue.js), bases de datos (SQL, MySQL, PostgreSQL, MongoDB), y utilicé herramientas de control de versiones como Git, GitHub y GitLab.",
+    link: "https://www.linkedin.com/in/oscar-ricardo-guerrero-serna-08a46a293/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
