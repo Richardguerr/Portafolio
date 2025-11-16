@@ -42,7 +42,7 @@ const { title, company, description, link, date } = Astro.props;
       {
         description.split("\n\n").map((paragraph, index) => (
           <p class={`${index === 0 ? "text-lg leading-relaxed" : "text-base"}`}>
-            {paragraph.split("\n").map((line, lineIndex) => (
+            {paragraph.split("\n").map((line) => (
               <span class="block">
                 {line.startsWith("•") ? (
                   <span class="flex items-start gap-2">
