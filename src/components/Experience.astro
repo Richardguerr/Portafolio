@@ -1,21 +1,68 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
+
 const EXPERIENCE = [
   {
-    date: "Actualmente...",
-    title: "Practicante Banco de Bogotá",
+    date: "2025 - Presente",
+    title: "Desarrollador de Software I",
+    company: "Finanzauto",
+    description:
+      "🚀 Liderando junto a mi equipo la evolución de melollevo.com.co, hemos transformado la plataforma de subastas en un referente tecnológico.\n\n" +
+      "• 🔧 Optimizamos el backend, reduciendo latencia en 40% mediante arquitectura de microservicios\n" +
+      "• 🛡️ Implementamos capas de seguridad avanzadas con el equipo de cybersecurity\n" +
+      "• 📊 Desarrollamos dashboard de analytics en tiempo real para toma de decisiones\n" +
+      "• ⚡ Automatizamos procesos con CI/CD, acelerando deployments en 60%\n\n" +
+      "Trabajo colaborativo con equipos cross-functional que ha elevado nuestra capacidad de innovación.",
+    link: "https://www.melollevo.com.co/subastas/inicio",
+  },
+  {
+    date: "Marzo 2025 - Octubre 2025",
+    title: "Desarrollador de Software II",
+    company: "Finanzauto",
+    description:
+      "💡 Desde cero, co-diseñé la arquitectura de melollevo.com.co, una plataforma de subastas en tiempo real que revolucionó el mercado.\n\n" +
+      "• ⚡ Implementamos WebSockets para pujas en tiempo real con 10k+ usuarios concurrentes\n" +
+      "• 🎨 Diseñamos UI/UX con React + Tailwind CSS, mejorando engagement en 35%\n" +
+      "• 🔗 Integramos pasarelas de pago (Wompi) y firma digital (Authentic)\n" +
+      "• 🗄️ Optimizamos PostgreSQL para manejar 1M+ transacciones diarias\n" +
+      "• 🔄 Desarrollamos workers asíncronos con Go y Python FastAPI\n\n" +
+      "Proyecto end-to-end que demostró nuestra capacidad técnica como equipo.",
+    link: "https://www.melollevo.com.co/subastas/inicio",
+  },
+  {
+    date: "Agosto 2024 - Febrero 2025",
+    title: "Practicante Desarrollo",
     company: "Banco de Bogotá",
     description:
-      "Durante mi práctica, desarrollé aplicaciones de gestión para mejorar la experiencia del cliente interno y el seguimiento de ventas. Apliqué conocimientos en programación (Python, Java, JavaScript, C#), desarrollo web (HTML, CSS, JavaScript, frameworks como React, Angular, Vue.js), bases de datos (SQL, MySQL, PostgreSQL, MongoDB), y utilicé herramientas de control de versiones como Git, GitHub y GitLab.",
-    link: "https://www.linkedin.com/in/oscar-ricardo-guerrero-serna-08a46a293/",
+      "🏦 Mi primera experiencia en el sector financiero, donde aporté al equipo de desarrollo con soluciones innovadoras.\n\n" +
+      "• 📱 Colaboré en apps internas que optimizaron procesos operativos\n" +
+      "• 🌐 Implementé features con React y Angular para dashboards administrativos\n" +
+      "• 🗃️ Trabajé con bases de datos SQL/NoSQL en entornos seguros\n" +
+      "• 🤝 Participé en sprints ágiles con metodologías Scrum\n\n" +
+      "Aprendizaje intensivo en desarrollo enterprise y mejores prácticas.",
+    link: "https://www.linkedin.com/in/ricardo-guerrero-08a46a293/",
+  },
+  {
+    date: "Enero 2022 - Junio 2023",
+    title: "Desarrollador Full Stack",
+    company: "Visión Futuro",
+    description:
+      "🌟 Transformé una simple landing page en un CRM completo que revolucionó la operación empresarial.\n\n" +
+      "• 📈 Evolucioné el proyecto de brochure digital a plataforma de gestión\n" +
+      "• 👥 Implementé sistema dual: admin para gestión y cliente para autoservicio\n" +
+      "• ☁️ Desplegué arquitectura cloud-first con alta disponibilidad\n" +
+      "• 📊 Integré PostgreSQL para transacciones y MongoDB para analytics\n" +
+      "• 🔄 Establecí flujos CI/CD con GitLab para desarrollo continuo\n\n" +
+      "Proyecto que demostró el impacto real del desarrollo software en los negocios.",
+    link: "https://www.linkedin.com/in/ricardo-guerrero-08a46a293/",
   },
 ];
 ---
 
-<ol class="relative mt-16">
+<ol class="relative mt-16 space-y-2">
   {
     EXPERIENCE.map((experience) => (
-      <li class="">
+      <li class="hover:bg-gray-50/50 dark:hover:bg-gray-800/30 rounded-xl transition-all duration-300">
         <ExperienceItem {...experience} />
       </li>
     ))
